@@ -2,7 +2,6 @@
 from __future__ import absolute_import
 
 import functools
-import pyros_setup
 
 """
  A very simple echo ROS node class.
@@ -10,16 +9,10 @@ import pyros_setup
  - echo service
 """
 
-try:
-    import roslib
-    import rospy
-    import std_msgs.msg as std_msgs
-except ImportError:
-    # emulating ros setup when needed here allow us to launch nodes and debug them from IDE.
-    pyros_setup.delayed_import()
-    import roslib
-    import rospy
-    import std_msgs.msg as std_msgs
+import roslib
+import rospy
+import std_msgs.msg as std_msgs
+
 
 # TODO : get rid of this somehow ( dynamic generation or integration of more basic services in ROS )
 from pyros_test.srv import StringEchoService
