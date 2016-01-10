@@ -21,6 +21,14 @@ catkin_package( CATKIN_DEPENDS message_runtime std_msgs)
 install(
     PROGRAMS
         nodes/echo.py
+        nodes/emptyService.py
+        nodes/slowService.py
+        nodes/triggerService.py
+        nodes/common.py
+        nodes/string_pub_node.py
+        nodes/string_pubnot_node.py
+        nodes/string_slow_node.py
+        nodes/string_sub_node.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
     )
 
