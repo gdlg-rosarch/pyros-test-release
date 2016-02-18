@@ -17,7 +17,7 @@ import std_msgs.msg as std_msgs
 import std_srvs.srv as std_srvs
 
 # TODO : get rid of this somehow ( dynamic generation or integration of more basic services in ROS )
-from pyros.srv import StringEchoService
+from pyros_test.srv import StringEchoService
 
 def service_callback(data):
     # extract data
