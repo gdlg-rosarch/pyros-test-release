@@ -1,8 +1,9 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>pyros_test</name>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <description>
-  Test Package for Pyros Setup
+    Basic test nodes for Pyros dynamic ROS interface
   </description>
 
   <license>BSD</license>
@@ -13,25 +14,23 @@
   <author email="asmodehn@gmail.com">AlexV</author>
   <maintainer email="asmodehn@gmail.com">AlexV</maintainer>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend version_gte="0.6.18">catkin</buildtool_depend>
 
-  <build_depend>message_generation</build_depend>
-  <build_depend>roslint</build_depend>
-  <build_depend>rospy</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <build_depend>message_generation</build_depend>
+  <depend version_gte="1.11.19">rospy</depend>
+  <depend version_gte="0.5.10">std_msgs</depend>
 
-  <run_depend>rospy</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>message_runtime</run_depend>
+  <build_depend version_gte="0.2.10">message_generation</build_depend>
+  <build_depend version_gte="0.10.0">roslint</build_depend>
+
+  <exec_depend version_gte="0.4.12">message_runtime</exec_depend>
 
   <!-- these dependencies are only for testing -->
-  <build_depend>rostest</build_depend>
-  <test_depend>rosunit</test_depend>
-  <test_depend>rostopic</test_depend>
+  <test_depend version_gte="1.11.19">rostest</test_depend>
+  <test_depend version_gte="1.11.12">rosunit</test_depend>
+  <test_depend version_gte="1.11.19">rostopic</test_depend>
 
   <!-- documentation dependencies -->
-  <build_depend>python-catkin-pkg</build_depend>
+  <doc_depend version_gte="0.2.10">python-catkin-pkg</doc_depend>
 
 </package>
 
