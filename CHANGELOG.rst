@@ -2,6 +2,17 @@
 Changelog for package pyros_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.5 (2016-10-24)
+------------------
+* now using params within nodes exposing a service.
+  added gitignore.
+* adding message type definition for pyros to use optional ros fields.
+* installing build-essential in container seems needed by catkin.
+* lowering std_msgs requirements. attempt to fix travis issues.
+* fixing travis_checks
+* now testing with docker. added kinetic.
+* Contributors: alexv
+
 0.0.4 (2016-06-02)
 ------------------
 * now travis checking both indigo and jade
