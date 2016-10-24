@@ -11,6 +11,30 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_python_setup()
 
+
+add_message_files(
+  DIRECTORY
+    msg
+  FILES
+    opt_empty.msg
+    opt_bool.msg
+    opt_int8.msg
+    opt_int16.msg
+    opt_int32.msg
+    opt_int64.msg
+    opt_uint8.msg
+    opt_uint16.msg
+    opt_uint32.msg
+    opt_uint64.msg
+    opt_float32.msg
+    opt_float64.msg
+    opt_string.msg
+    opt_time.msg
+    opt_duration.msg
+    opt_header.msg
+)
+
+
 add_service_files(DIRECTORY srv
     FILES
     StringEchoService.srv
