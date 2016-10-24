@@ -1,3 +1,26 @@
+## pyros_test (jade) - 0.0.5-0
+
+The packages in the `pyros_test` repository were released into the `jade` distro by running `/usr/bin/bloom-release pyros_test --track jade --rosdistro jade` on `Mon, 24 Oct 2016 23:00:47 -0000`
+
+The `pyros_test` package was released.
+
+Version of package(s) in repository `pyros_test`:
+
+- upstream repository: https://github.com/asmodehn/pyros-test.git
+- release repository: https://github.com/asmodehn/pyros-test-release.git
+- rosdistro version: `0.0.4-0`
+- old version: `0.0.4-0`
+- new version: `0.0.5-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.22`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.39`
+
+
 ## pyros_test (kinetic) - 0.0.5-0
 
 The packages in the `pyros_test` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release pyros_test --track kinetic --rosdistro kinetic` on `Mon, 24 Oct 2016 22:52:01 -0000`
