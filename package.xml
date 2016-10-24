@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>pyros_test</name>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <description>
     Basic test nodes for Pyros dynamic ROS interface
   </description>
@@ -17,7 +17,7 @@
   <buildtool_depend version_gte="0.6.18">catkin</buildtool_depend>
 
   <depend version_gte="1.11.19">rospy</depend>
-  <depend version_gte="0.5.10">std_msgs</depend>
+  <depend version_gte="0.5.9">std_msgs</depend>
 
   <build_depend version_gte="0.2.10">message_generation</build_depend>
   <build_depend version_gte="0.10.0">roslint</build_depend>
