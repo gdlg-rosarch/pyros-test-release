@@ -4,6 +4,8 @@
 from __future__ import absolute_import
 
 import common
+import sys
+
 import rospy
 import std_msgs
 
@@ -11,7 +13,10 @@ import std_msgs
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('string_pubnot_node')
+        args = rospy.myargv(argv=sys.argv)
+        node_name = args[1] if len(args) > 1 else 'string_pubnot_node'
+
+        rospy.init_node(node_name)
         rospy.loginfo('String Pub node started. [' + rospy.get_name() + ']')
 
         topic_name = rospy.get_param("~topic_name", "")
