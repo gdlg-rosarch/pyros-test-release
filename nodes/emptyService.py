@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import sys
 
 import rospy
 from std_srvs.srv import Empty, EmptyResponse
@@ -11,7 +12,11 @@ def handle_msg(rq):
 
 
 def empty_server():
-    rospy.init_node('empty_node')
+
+    args = rospy.myargv(argv=sys.argv)
+    node_name = args[1] if len(args) > 1 else 'empty_node'
+
+    rospy.init_node(node_name)
 
     # TODO : seems not possible with ROS ?
     #   File "/usr/lib/python2.7/xmlrpclib.py", line 659, in dump_nil

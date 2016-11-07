@@ -2,6 +2,14 @@
 Changelog for package pyros_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.6 (2016-11-07)
+------------------
+* Merge pull request `#5 <https://github.com/asmodehn/pyros-test/issues/5>`_ from asmodehn/string_sub_node
+  implementing a simple string_sub_node
+* implementing a simple string_sub_node
+* now able to name nodes via first command argument.
+* Contributors: AlexV, alexv
+
 0.0.5 (2016-10-24)
 ------------------
 * now using params within nodes exposing a service.
