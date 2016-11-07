@@ -22,7 +22,7 @@ tracks:
     ros_distro: indigo
     vcs_type: git
     vcs_uri: https://github.com/asmodehn/pyros-test.git
-    version: :{auto}
+    version: :{ask}
   jade:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
