@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import sys
 
 import rospy
 from std_srvs.srv import Trigger, TriggerResponse
@@ -12,7 +13,10 @@ def handle_msg(rq):
 
 
 def trigger_server():
-    rospy.init_node('trigger_node')
+    args = rospy.myargv(argv=sys.argv)
+    node_name = args[1] if len(args) > 1 else 'trigger_node'
+
+    rospy.init_node(node_name)
     rospy.set_param('/test/confirm_param', confirm_msg)
     srv = rospy.Service('/test/trgsrv', Trigger, handle_msg)
     rospy.spin()
