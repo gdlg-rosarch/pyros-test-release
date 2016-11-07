@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import sys
 import rospy
 from std_srvs.srv import Empty, EmptyResponse
 
@@ -13,7 +13,10 @@ def handle_msg(rq):
 
 
 def empty_server():
-    rospy.init_node('slow_node')
+    args = rospy.myargv(argv=sys.argv)
+    node_name = args[1] if len(args) > 1 else 'slow_node'
+
+    rospy.init_node(node_name)
     rospy.set_param('~slow_param', delay)
     srv = rospy.Service('/test/slowsrv', Empty, handle_msg)
     rospy.spin()

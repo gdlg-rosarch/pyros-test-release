@@ -2,7 +2,6 @@
 from __future__ import absolute_import
 
 import sys
-import os
 
 """
  A very simple echo ROS node, with delay.
@@ -29,7 +28,10 @@ def service_callback(data):
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('string_slow_node')
+        args = rospy.myargv(argv=sys.argv)
+        node_name = args[1] if len(args) > 1 else 'string_slow_node'
+
+        rospy.init_node(node_name)
         rospy.loginfo('String Slow node started. [' + rospy.get_name() + ']')
 
         slow_service_name = rospy.get_param("~slow_service_name", "slow_service")
