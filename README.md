@@ -1,3 +1,26 @@
+## pyros_test (lunar) - 0.0.6-1
+
+The packages in the `pyros_test` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --rosdistro lunar --track lunar pyros_test --edit` on `Fri, 04 Aug 2017 07:54:01 -0000`
+
+The `pyros_test` package was released.
+
+Version of package(s) in repository `pyros_test`:
+
+- upstream repository: https://github.com/pyros-dev/pyros-test.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `0.0.6-0`
+- new version: `0.0.6-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## pyros_test (lunar) - 0.0.6-0
 
 The packages in the `pyros_test` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --rosdistro lunar --track lunar pyros_test` on `Fri, 04 Aug 2017 07:40:06 -0000`
