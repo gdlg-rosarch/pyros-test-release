@@ -1,0 +1,12 @@
+Source: ros-lunar-pyros-test
+Section: misc
+Priority: extra
+Maintainer: AlexV <asmodehn@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin (>= 0.6.18), ros-lunar-message-generation (>= 0.2.10), ros-lunar-roslint (>= 0.10.0), ros-lunar-rospy (>= 1.11.19), ros-lunar-rostest (>= 1.11.19), ros-lunar-rostopic (>= 1.11.19), ros-lunar-rosunit (>= 1.11.12), ros-lunar-std-msgs (>= 0.5.9)
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-lunar-pyros-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-message-runtime (>= 0.4.12), ros-lunar-rospy (>= 1.11.19), ros-lunar-std-msgs (>= 0.5.9)
+Description: Basic test nodes for Pyros dynamic ROS interface
