@@ -93,5 +93,5 @@ tracks:
     release_tag: :{version}
     ros_distro: lunar
     vcs_type: git
-    vcs_uri: https://github.com/asmodehn/pyros-test.git
+    vcs_uri: https://github.com/pyros-dev/pyros-test.git
     version: :{ask}
